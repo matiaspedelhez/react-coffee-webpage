@@ -1,6 +1,6 @@
 # ReactJS Coffee Website
 
-> Proyect under development.
+> Project under development.
 
 Design made by the amazing UX/UI designer, Illia Frunza! [Go check him out](https://www.figma.com/@rengen_ill).
 
