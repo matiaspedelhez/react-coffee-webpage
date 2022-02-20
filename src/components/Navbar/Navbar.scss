@@ -1,0 +1,90 @@
+$primary-green: #2d635e;
+$side-margin: 120px;
+
+.navbar {
+
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cedarville Cursive";
+  font-weight: 400;
+  font-size: 24px;
+  position: relative;
+  
+}
+.logo {
+  display: flex;
+}
+.logo-img {
+  margin: 0 6px 0 0;
+}
+.menu-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 18px;
+  cursor: pointer;
+}
+.nav-menu {
+  z-index:500;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: calc(100% - 60px);
+  top: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+  right: -100%;
+  list-style-type: none;
+  font-family: "Josefin Sans";
+  font-size: 24px;
+  transition: 0.4s;
+  li a {
+    font-style: none;
+    text-decoration: none;
+  }
+}
+.nav-menu.active {
+  right: 0;
+}
+
+.hightlited-button {
+  padding: 14px 28px;
+  background-color: $primary-green;
+  border-radius: 7px;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+
+  a {
+    color: white;
+  }
+}
+
+@media (min-width: 940px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .menu-button {
+    display: none;
+  }
+
+  .nav-menu {
+    height: unset;
+    font-size: 18px;
+    position: unset;
+    flex-direction: row;
+    right: 0;
+    justify-content: space-between;
+    width: 500px;
+    align-items: center;
+    margin: 0 $side-margin 0 0;
+  }
+
+  .logo {
+    margin: 0 0 0 $side-margin;
+  }
+}

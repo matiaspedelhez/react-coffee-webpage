@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Cedarville+Cursive&family=Josefin+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img{
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.shown {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+a:visited {
+  color: black;
+}
+
+::-moz-selection { 
+  color: white;
+  background: #2D635E;
+}
+
+::selection {
+  color: white;
+  background: #2D635E;
+}

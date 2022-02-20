@@ -1,0 +1,30 @@
+.DescriptionCard{
+    height: auto;
+}
+.image-card{
+    display: flex;
+   justify-content: center;
+    height: 250px;
+    width: 100%;
+    background-color: #FAE9E0; 
+    margin: 0 0 12px 0;
+}
+.image-coffee{
+    transform: translateY(-20px);
+    z-index: 5;
+    object-fit: contain;
+}
+
+.text-description{
+    margin: 24px;
+    h3{
+        font-size: 38px;
+        margin: 0 0 24px 0;
+    }
+    p{
+        font-family: "Alegreya Sans";
+        margin: 0 0 16px 0;
+        font-size: 19px;
+        line-height: 36px;
+    }
+}
