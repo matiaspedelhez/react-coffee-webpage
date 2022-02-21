@@ -1,6 +1,6 @@
 # ReactJS Coffee Website
 
-> Proyect under development.
+> Project under development.
 
 Design made by the amazing UX/UI designer, Illia Frunza! [Go check him out](https://www.figma.com/@rengen_ill).
 
@@ -10,4 +10,4 @@ ReactJS, static and reusable components, SASS, SVG manipulation, mobile-friendly
 
 ## Preview:
 
-![preview](https://github.com/matiaspedelhez/react-coffee-webp/blob/main/Preview.jpg?raw=true)
+![preview](https://github.com/matiaspedelhez/react-coffee-webpage/blob/master/Preview.jpg?raw=true)
