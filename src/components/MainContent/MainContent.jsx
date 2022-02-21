@@ -17,11 +17,7 @@ function MainContent() {
           <img src={arrow_button} alt="arrow" />
         </div>
       </div>
-      <img
-        className="coffee-aside-image"
-        src={coffee_desktop}
-        alt="coffee-image"
-      />
+      <img className="coffee-aside-image" src={coffee_desktop} alt="coffee" />
     </section>
   );
 }

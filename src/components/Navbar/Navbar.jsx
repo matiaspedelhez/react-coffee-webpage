@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
 
 const open_menu = require("./assets/menu.png");
 const close_menu = require("./assets/menu-close.png");
 
-function Navbar({ showMenu, handleShowMenu }) {
+function Navbar() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  useEffect(() => {
+    //freeze scroll to the top during sidemenu
+    if (showMenu) {
+      document.body.style.position = "fixed";
+    } else {
+      document.body.style.position = "unset";
+    }
+  });
+
+  const handleShowMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <div className="navbar">
       <div className="logo">

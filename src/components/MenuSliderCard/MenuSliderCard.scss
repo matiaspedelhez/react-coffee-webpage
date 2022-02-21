@@ -1,0 +1,23 @@
+.MenuSliderCard{
+    height: 320px;
+    width: 220px;
+    background-color: white;
+    border-radius: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    justify-content: space-around;
+}
+
+.menu-card-button{
+    color:white;
+    padding: 16px 16px;
+    background-color: #2D635E;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.menu-card-description {
+    line-height: 32px;
+}
