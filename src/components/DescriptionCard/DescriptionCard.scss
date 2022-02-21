@@ -1,4 +1,6 @@
 .DescriptionCard{
+    display: flex;
+    flex-direction: column;
     height: auto;
 }
 .image-card{
@@ -26,5 +28,20 @@
         margin: 0 0 16px 0;
         font-size: 19px;
         line-height: 36px;
+    }
+}
+
+@media (min-width: 940px) {
+    .DescriptionCard:first-of-type{
+        flex-direction: row;
+    }
+    .DescriptionCard{
+        align-items: center;
+        flex-direction: row-reverse;
+        margin: 0 120px 0 120px;
+    }
+    .image-card{
+        min-width: 400px;
+        width: 400px;
     }
 }
