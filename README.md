@@ -6,7 +6,7 @@ Design made by the amazing UX/UI designer, Illia Frunza! [Go check him out](http
 
 ## Technologies used in this website:
 
-ReactJS, static and functional components, SASS, SVG manipulation, mobile-friendly design (responsive), useState, useEffect and useRef hooks, and Google Maps integration.
+ReactJS, functional components, SASS, SVG manipulation, mobile-friendly design (responsive), useState, useEffect and useRef hooks, and Google Maps integration.
 
 ## Preview:
 
