@@ -10,11 +10,14 @@ function Navbar() {
   useEffect(() => {
     //freeze scroll to the top during sidemenu
     if (showMenu) {
+      document.body.style.overflowY = "hidden";
       document.body.style.position = "fixed";
     } else {
+      document.body.style.overflowY = "unset";
       document.body.style.position = "unset";
     }
-  });
+    console.log(showMenu);
+  }, [showMenu]);
 
   const handleShowMenu = () => {
     setShowMenu(!showMenu);
