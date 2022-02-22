@@ -1,4 +1,4 @@
-export default [
+const coffee_items = [
   {
     id: 1,
     card_name: "Americano",
@@ -36,3 +36,5 @@ export default [
       "Espresso - black coffee made in a coffee machine or a special coffee machine, where hot water is passed through pressed ground beans at a pressure.",
   },
 ];
+
+export default coffee_items;
