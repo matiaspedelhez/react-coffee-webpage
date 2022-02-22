@@ -5,23 +5,24 @@ import coffee_items from "../../coffee_items";
 import MenuSliderCard from "../MenuSliderCard/MenuSliderCard";
 
 function MenuSlider() {
-  // const [innerCarouselWidth, setInnerCarouselWidth] = useState(0);
   const innerCarouselRef = useRef(null);
+  const [innerCarouselWidth, setInnerCarouselWidth] = useState(0);
 
-  // useEffect(() => {
-  //   function handleInnerCarouselWidth() {
-  //     setInnerCarouselWidth(
-  //       innerCarouselRef.current.offsetWidth -
-  //         innerCarouselRef.current.scrollWidth
-  //     );
-  //   }
-  //   window.addEventListener("resize", handleInnerCarouselWidth);
-  //   handleInnerCarouselWidth();
+  useEffect(() => {
+    handleInnerCarouselWidth();
+    function handleInnerCarouselWidth() {
+      setInnerCarouselWidth(
+        innerCarouselRef.current.offsetWidth -
+          innerCarouselRef.current.scrollWidth
+      );
+    }
 
-  //   return (_) => {
-  //     window.removeEventListener("resize", handleInnerCarouselWidth);
-  //   };
-  // });
+    window.addEventListener("resize", handleInnerCarouselWidth);
+
+    return (_) => {
+      window.removeEventListener("resize", handleInnerCarouselWidth);
+    };
+  }, []);
 
   return (
     <div className="MenuSlider">
@@ -29,7 +30,7 @@ function MenuSlider() {
         <motion.div
           ref={innerCarouselRef}
           drag="x"
-          dragConstraints={innerCarouselRef}
+          dragConstraints={{ right: 0, left: innerCarouselWidth }}
           className="inner-carousel"
         >
           {coffee_items.map((item) => {

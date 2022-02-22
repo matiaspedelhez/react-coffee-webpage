@@ -2,13 +2,14 @@
     height: 320px;
     min-width: 220px;
     background-color: white;
-    border-radius: 1.5rem;
+    border-radius: 7px;
     text-align: center;
     display: flex;
     flex-direction: column;
     padding: 30px 40px;
     justify-content: space-around;
-    margin: 0 24px 0 0;
+    margin: 4px 22px 4px 2px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
 .menu-card-button{

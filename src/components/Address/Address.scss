@@ -1,0 +1,42 @@
+.Address{
+    width: 100%;
+    height: auto;
+    margin: 24px 0 56px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.google-map{
+    max-width: 550px;
+    max-height: 550px;
+    width: 90%;
+    height: 40vh;
+}
+
+.textual-address{
+    margin: 48px 0;
+    text-align: center;
+    h3{
+        font-size: 32px;
+        margin: 0 0 16px 0;
+    }
+    p{
+        margin: 0 0 5px 0;
+    }
+}
+
+@media (min-width: 940px) {
+   .Address{
+       max-width: 1440px;
+       flex-direction: row;
+       justify-content: space-between;
+   }
+   .google-map{
+       margin: 0 0 0 120px;
+   }
+   .textual-address{
+       margin: 0 120px 0 0;
+       width: 100%;
+   }
+  }

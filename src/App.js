@@ -1,6 +1,8 @@
 import React from "react";
 
 import "./App.scss";
+import Address from "./components/Address/Address";
+import Credits from "./components/Credits/Credits";
 import MainContent from "./components/MainContent/MainContent";
 import MenuSlider from "./components/MenuSlider/MenuSlider";
 import Navbar from "./components/Navbar/Navbar";
@@ -13,6 +15,8 @@ function App() {
       <MainContent />
       <SecondView />
       <MenuSlider />
+      <Address />
+      <Credits />
     </div>
   );
 }

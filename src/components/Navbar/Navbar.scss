@@ -2,7 +2,6 @@ $primary-green: #2d635e;
 $side-margin: 120px;
 
 .navbar {
-
   height: 100px;
   width: 100vw;
   display: flex;
@@ -13,7 +12,6 @@ $side-margin: 120px;
   font-weight: 400;
   font-size: 24px;
   position: relative;
-
 }
 .logo {
   display: flex;
@@ -52,13 +50,11 @@ $side-margin: 120px;
 .nav-menu.active {
   right: 0;
 }
-
 .hightlited-button {
   padding: 14px 28px;
   background-color: $primary-green;
   border-radius: 7px;
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
-
   a {
     color: white;
   }
@@ -71,7 +67,6 @@ $side-margin: 120px;
   .menu-button {
     display: none;
   }
-
   .nav-menu {
     height: unset;
     font-size: 18px;
@@ -83,7 +78,6 @@ $side-margin: 120px;
     align-items: center;
     margin: 0 $side-margin 0 0;
   }
-
   .logo {
     margin: 0 0 0 $side-margin;
   }
