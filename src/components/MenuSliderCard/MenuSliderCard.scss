@@ -1,6 +1,6 @@
 .MenuSliderCard{
     height: 320px;
-    width: 220px;
+    min-width: 220px;
     background-color: white;
     border-radius: 1.5rem;
     text-align: center;
@@ -8,7 +8,11 @@
     flex-direction: column;
     padding: 30px 40px;
     justify-content: space-around;
+    margin: 0 24px 0 0;
+    
 }
+
+
 
 .menu-card-button{
     color:white;
